@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from https://studio.chubb.com/connect/documentation by HTTrack Website Copier/3.x [XR&CO], Thu, 05 Nov 2026 05:53:12 GMT -->
+<head>
+  <script src="js/common.js"></script>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Chubb Studio Connect</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link href="css/style_j.css" rel="stylesheet" />
+  <link href="css/style_s.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../unpkg.com/swagger-ui-dist%404.4.1/swagger-ui.css" />
+</head>
+
+<body class="sub_page" id="lan_apis">
+  <!-- <div class="doc_area"> -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container navbar navbar-expand-lg navbar-light ">
+        <div class="image-logo mobile">
+          <a href="index-2.html"> <img loading="lazy" src="images/chubb.png" alt="chubb"><span class="sr-only">(current)</span></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
+            <path d="M1.5 1.5H28.5" stroke="black" stroke-width="2" stroke-linecap="square" />
+            <path d="M1.5 8.5H28.5" stroke="black" stroke-width="2" stroke-linecap="square" />
+            <path d="M1.5 15.5H28.5" stroke="black" stroke-width="2" stroke-linecap="square" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center mb-menu">
+            <div class="image-logo">
+              <a href="index-2.html" onclick="gtmAnalytics('Home','header-link')"> <img loading="lazy" src="images/chubb.png" alt="chubb"><span class="sr-only">(current)</span></a>
+            </div>
+            <button class="navbar-toggler cross" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M15 1L8 8L1 1" stroke="white" stroke-width="2" />
+                <path d="M15 15L8 8L1 15" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="propositions.html" key="link#1" onclick="gtmAnalytics('Propositions','header-link')">Propositions </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html" key="link#2" onclick="gtmAnalytics('Products','header-link')">Products </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="integration.html" key="link#3" onclick="gtmAnalytics('Integrations','header-link')">Integrations</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="documentation.html" key="link#4" onclick="gtmAnalytics('APIs','header-link')"> APIs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="partners.html" key="link#5" onclick="gtmAnalytics('Partners','header-link')">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insights.html" key="link#13" onclick="gtmAnalytics('Insights','header-link')">Insights </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="support" key="link#6" onclick="gtmAnalytics('Support','header-link')">Support</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link nav-lang-btn" href="#" key="link#7" onclick="gtmAnalytics('Language','header-link')">Language: </a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="country_btn" data-toggle="dropdown">EN
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation" class="lng-button-cust" onclick="setLanguage('EN')" key="link#8">English (EN)</li>
+                <li role="presentation" class="lng-button-cust" onclick="setLanguage('ES')" key="link#9">Spanish (ES)</a></li>
+                <li role="presentation" class="lng-button-cust" onclick="setLanguage('PT')" key="link#10">Portugese (PT)</a></li>
+              </ul>
+            </div>
+            <!-- visible only in mobiles -->
+            <ul class="navbar-nav d-sm-block d-md-none">
+              <li class="nav-item">
+                <a class="nav-link" id="apistudio_link" href="https://apistudio.chubb.com/#/" target="_blank" onclick="gtmAnalytics('Partner login','header-link')" key="link#11">Partner login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portal.html" onclick="gtmAnalytics('Chubb employee login','header-link')" key="link#12">Chubb employee login</a>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <div class="login d-none d-sm-block">
+                <button class="btn btn-dark loginbtn" type="submit">
+                  <span key="login">Login</span>
+                </button>
+                <div class="login-content">
+                  <a id="apistudio_link_desktop"  href="https://apistudio.chubb.com/#/" target="_blank" onclick="gtmAnalytics('Partner login','header-link')" key="link#11">Partner login</a>
+                  <a href="portal.html" onclick="gtmAnalytics('Chubb employee login','header-link')" key="link#12">Chubb employee login</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero_area">
+    <section class="slider_section position-relative api">
+      <div class="container py-0">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 my-0 px-0 mobile-chub-logo-mobile">
+            <nav aria-label="breadcrumb" class="pd_top">
+
+              <a class="nav-link px-0 py-o" href="index-2.html"> <span class=" px-0 breadcrumb-item landpage"><img
+                    class="img_log m" src="images/Common/Chubb_Studiologo.svg" alt="chubb" /></span></a></span>
+            </nav>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7 my-0 px-0">
+            <nav aria-label="breadcrumb" class="pd_top desktop">
+              <a class="nav-link px-0 py-o" href="index-2.html"> <span class=" px-0 breadcrumb-item landpage"><img
+                    class="img_log m" src="images/Common/Chubb_Studiologo.svg" alt="chubb" /></span></a></span>
+            </nav>
+            <div id="prop_banner" class="lng-txt">
+              <p class="lpage" key="lan_apis1">APIs</p>
+              <p class="lpage-text" key="lan_apis2">Learn about our APIs and ways to integrate them to integrate to create the
+                solution you need
+                for your customer’s protection journey</p>
+                <div id="prop_btn">
+                  <a href="#defaultOpen" onclick="gtmAnalytics('Learn more','banner-cta')" class="active"> <button class="product_butto ml-0 button-chub white" key="btn1">Learn more</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 image-container">
+            <img loading="lazy" src="images/Landing/api-hero.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- end service section -->
+  <div class="scolltop" onclick="scTop(0, -9000)">
+    <img loading="lazy" class="img_scrl" src="images/Common/scrollIcon.svg" alt="chubb" />
+  </div>
+
+  <section class="layout_padding">
+    <div class="container">
+      <div class="row">
+        <h1 class="tablinksExp" onclick="openCity(event, 'Schema')" id="defaultOpen" key="lan_apis3">
+          Schema/Endpoints
+        </h1>
+        <div class="txt-header">
+          <p class="integr-txt" key="lan_apis12">Explore our APIs and examples of requests/responses on the API Sandbox page below. You can expand on the accordion for each API endpoint to view and try out the request and responses for each API.</p>
+        </div>
+
+
+        <div id="Lifecycle" class="doc-tabcontent">
+          <div class="tab-side-doc sticky-top">
+            <h3 id="Overview">Topics</h3>
+            <span>
+              <span href="#Overview">
+                <button class="tablinks-side" onclick="openCitySide(event, 'Overview');scroll()" id="defaultOpenSide">
+                  <span class="dotProduct"></span>
+                  Introduction
+                </button>
+              </span>
+            </span>
+
+            <a href="#Discovery">
+              <button class="tablinks-side"
+                onclick="openCitySide(event, 'Discovery');gtmAnalytics('Discovery','tab-side')">
+                <span class="dotProduct"></span>
+                Discovery
+              </button>
+            </a>
+
+            <a href="#Pricing">
+              <button class="tablinks-side" onclick="openCitySide(event, 'Pricing');gtmAnalytics('Pricing','tab-side')"
+                id="defaultOpenSide"><span class="dotProduct"></span>Pricing</button></a>
+
+            <a href="#Sales"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Sales');gtmAnalytics('Sales','tab-side')"><span
+                  class="dotProduct"></span>Sales</button></a>
+
+            <a href="#Payments"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Payments');gtmAnalytics('Payments','tab-side')" id="defaultOpenSide"><span
+                  class="dotProduct"></span>Payments</button></a>
+
+            <a href="#Claims"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Claims');gtmAnalytics('Claims','tab-side')" id="defaultOpenSide"><span
+                  class="dotProduct"></span>Claims</button></a>
+
+            <a href="#Servcing"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Servcing');gtmAnalytics('Servicing','tab-side')"><span
+                  class="dotProduct"></span>Servicing</button></a>
+
+            <a href="#Utilities"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Utilities');gtmAnalytics('Utilities','tab-side')"
+                id="defaultOpenSide"><span class="dotProduct"></span>Utilities</button></a>
+
+            <a href="#Metadata"><button class="tablinks-side"
+                onclick="openCitySide(event, 'Metadata');gtmAnalytics('Metadata','tab-side')"><span
+                  class="dotProduct"></span>Metadata</button></a>
+          </div>
+        </div>
+
+        <div id="Schema" class="doc-tabcontent">
+          <div class="dropdown mobile-api">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div>
+                <span class="topic" key="lan_apis0_topic">Topics:</span>
+                <div class="icon-text" style="display: inline;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path
+                      d="M13.1299 11.3008L22.1099 19.6508C22.6099 20.1108 22.6399 20.8908 22.1699 21.3908L20.0699 23.6508"
+                      stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M18.62 21.2002L10.77 13.9102" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                    <circle cx="7" cy="8" r="7" stroke="black" stroke-width="1.4" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span class="topic-text" key="lan_apis5">Discovery</span>
+                </div>
+              </div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Discovery_Schema')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="25" viewBox="0 0 24 25" fill="none">
+                  <path
+                    d="M13.1299 11.3008L22.1099 19.6508C22.6099 20.1108 22.6399 20.8908 22.1699 21.3908L20.0699 23.6508"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path d="M18.62 21.2002L10.77 13.9102" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <circle cx="7" cy="8" r="7" stroke="black" stroke-width="1.4" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="topic-text" key="lan_apis5">Discovery</span></button>
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Pricing_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.98 9.72C2.04 4.6 6.58 0.75 12.02 0.75C18.25 0.75 23.3 5.8 23.3 12.03C23.3 18.26 18.25 23.31 12.02 23.31C5.79 23.31 0.75 18.25 0.75 12.03"
+                    fill="" />
+                  <path
+                    d="M0.98 9.72C2.04 4.6 6.58 0.75 12.02 0.75C18.25 0.75 23.3 5.8 23.3 12.03C23.3 18.26 18.25 23.31 12.02 23.31C5.79 23.31 0.75 18.25 0.75 12.03"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.1198 10.239V9.29898C15.1198 8.14898 14.1798 7.20898 13.0298 7.20898H11.1598C10.0098 7.20898 9.06982 8.14898 9.06982 9.29898C9.06982 9.86898 9.38982 10.399 9.90982 10.649L14.2898 12.839C14.7998 13.099 15.1298 13.619 15.1298 14.189C15.1298 15.339 14.1898 16.279 13.0398 16.279H11.1698C10.0198 16.279 9.07982 15.339 9.07982 14.189V13.249"
+                    fill="" />
+                  <path
+                    d="M15.1198 10.239V9.29898C15.1198 8.14898 14.1798 7.20898 13.0298 7.20898H11.1598C10.0098 7.20898 9.06982 8.14898 9.06982 9.29898V9.29898C9.06982 9.86898 9.38982 10.399 9.90982 10.649L14.2898 12.839C14.7998 13.099 15.1298 13.619 15.1298 14.189V14.189C15.1298 15.339 14.1898 16.279 13.0398 16.279H11.1698C10.0198 16.279 9.07982 15.339 9.07982 14.189V13.249"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 7.20992V4.66992V7.20992Z" fill="" />
+                  <path d="M12.0898 7.20992V4.66992" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 18.8108V16.3008V18.8108Z" fill="" />
+                  <path d="M12.0898 18.8108V16.3008" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg><span class="topic-text" key="lan_apis6">Pricing</span></button>
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Sales_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.70996 18.1305H20.66C20.66 18.1305 21.22 18.1905 21.45 17.6205L23.2 8.37055C23.37 7.84055 22.98 7.31055 22.43 7.31055H4.70996"
+                    fill="" />
+                  <path
+                    d="M9.70996 18.1305H20.66C20.66 18.1305 21.22 18.1905 21.45 17.6205L23.2 8.37055C23.37 7.84055 22.98 7.31055 22.43 7.31055H4.70996"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.75 8.34961L6.47 17.5396C6.47 17.5396 6.7 18.3396 6.7 18.7096" fill="" />
+                  <path d="M4.75 8.34961L6.47 17.5396C6.47 17.5396 6.7 18.3396 6.7 18.7096" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                  <circle cx="9.00023" cy="22.2307" r="1.51" fill="" stroke="black" stroke-width="1.4"
+                    stroke-linejoin="round" />
+                  <circle cx="17.8699" cy="22.2307" r="1.51" fill="" stroke="black" stroke-width="1.4"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.75 8.35L3.31 1.01L0 1" fill="" />
+                  <path d="M4.75 8.35L3.31 1.01L0 1" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77979 10.6309H22.9998H7.77979Z" fill="" />
+                  <path d="M7.77979 10.6309H22.9998" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.2002 14.2793H22.3202H9.2002Z" fill="" />
+                  <path d="M9.2002 14.2793H22.3202" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg><span class="topic-text" key="lan_apis7">Sales</span></button>
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Payments_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.9102 5.82039C23.1802 5.82039 22.3602 5.56039 21.8002 5.09039L19.4902 3.13039C18.9302 2.66039 18.2302 2.40039 17.5002 2.40039H13.3102L11.9502 8.92039H13.6702C14.8602 8.92039 15.9102 8.16039 16.3002 7.04039L16.5802 6.20039"
+                    fill="" />
+                  <path
+                    d="M23.9102 5.82039C23.1802 5.82039 22.3602 5.56039 21.8002 5.09039L19.4902 3.13039C18.9302 2.66039 18.2302 2.40039 17.5002 2.40039H13.3102L11.9502 8.92039H13.6702C14.8602 8.92039 15.9102 8.16039 16.3002 7.04039L16.5802 6.20039"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.46 17.0408H18.58C19.24 17.0408 19.88 16.8308 20.42 16.4308L21.79 15.4108C22.32 15.0208 23.3 14.8008 23.96 14.8008"
+                    fill="" />
+                  <path
+                    d="M14.46 17.0408H18.58C19.24 17.0408 19.88 16.8308 20.42 16.4308L21.79 15.4108C22.32 15.0208 23.3 14.8008 23.96 14.8008"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.55 6.06L7.49 1L0.75 7.73L12.17 19.15L18.91 12.41L14.97 8.47" fill="" />
+                  <path d="M12.55 6.06L7.49 1L0.75 7.73L12.17 19.15L18.91 12.41L14.97 8.47" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.22998 3.25L16.57 14.59L5.22998 3.25Z" fill="" />
+                  <path d="M5.22998 3.25L16.57 14.59" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg><span class="topic-text" key="lan_apis8">Payments</span></button>
+
+
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Servcing_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.9199H23.95H0Z" fill="" />
+                  <path d="M0 21.9199H23.95" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.80992 17.2895H23.3299C23.3299 11.0295 18.2599 6.18945 11.9999 6.18945C5.73992 6.18945 0.669922 11.0295 0.669922 17.2895V18.0995"
+                    fill="" />
+                  <path
+                    d="M3.80992 17.2895H23.3299C23.3299 11.0295 18.2599 6.18945 11.9999 6.18945C5.73992 6.18945 0.669922 11.0295 0.669922 17.2895V18.0995"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39014 1.5H15.6001H8.39014Z" fill="" />
+                  <path d="M8.39014 1.5H15.6001" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9702 1.67969V5.73969V1.67969Z" fill="" />
+                  <path d="M11.9702 1.67969V5.73969" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.3501 13.1205C5.3501 13.1205 6.4801 10.2305 10.1501 9.31055L5.3501 13.1205Z" fill="" />
+                  <path d="M5.3501 13.1205C5.3501 13.1205 6.4801 10.2305 10.1501 9.31055" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                </svg><span class="topic-text" key="lan_apis9">Servicing</span></button>
+
+
+                <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Claims_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.66996 7.92C10.58 7.92 12.13 6.37 12.13 4.46C12.13 2.55 10.58 1 8.66996 1C6.75996 1 5.20996 2.55 5.20996 4.46C5.20996 6.37 6.75996 7.92 8.66996 7.92Z"
+                    fill="" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 2.19922C0 2.75922 0.72 7.80922 0.72 7.80922C0.89 9.12922 2.01 10.1192 3.34 10.1192H3.94H13.42L11.77 22.3192C11.71 22.9692 11.17 23.4692 10.52 23.4692H6.85C6.2 23.4692 5.66 22.9692 5.6 22.3192V22.3392L4.54 14.7092C4.54 14.7092 4.3 13.0792 4.29 12.8392"
+                    fill="" />
+                  <path
+                    d="M0 2.19922C0 2.75922 0.72 7.80922 0.72 7.80922C0.89 9.12922 2.01 10.1192 3.34 10.1192H3.94H13.42L11.77 22.3192C11.71 22.9692 11.17 23.4692 10.52 23.4692H6.85C6.2 23.4692 5.66 22.9692 5.6 22.3192V22.3392L4.54 14.7092C4.54 14.7092 4.3 13.0792 4.29 12.8392"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg><span class="topic-text" key="lan_apis10">Claims</span></button>
+
+              <button class="tablinks-side-schema dropdown-item"
+                onclick="openSchema(event, 'Utilities_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.2394 1.98895C7.44674 0.196294 4.71918 -0.198485 2.4775 0.939779L2.38546 0.995538C2.04142 1.24145 1.98877 1.74914 2.30019 2.05964L5.1631 4.9146L3.9141 6.1636L1.0594 3.30895C0.72284 2.97239 0.155771 3.06261 -0.0597222 3.487C-1.19833 5.72937 -0.802986 8.4576 0.990994 10.2404L1.17505 10.4178C2.67263 11.799 4.76338 12.2715 6.69282 11.7264L6.7331 11.7126L18.8195 23.7989C19.0928 24.0723 19.536 24.0723 19.8094 23.7989L22.7994 20.8089L22.8732 20.7221C23.07 20.4486 23.0454 20.065 22.7994 19.819L10.7121 7.7316L10.7256 7.68947C11.2839 5.68089 10.7486 3.49816 9.2394 1.98895ZM4.17134 1.80677C5.61973 1.48282 7.16259 1.89204 8.24945 2.9789C9.4871 4.21655 9.86271 6.05342 9.25826 7.6801L9.22987 7.77758C9.1807 8.00738 9.25008 8.24953 9.41945 8.4189L21.3141 20.3136L19.3141 22.3136L7.4194 10.419C7.22498 10.2245 6.93474 10.1619 6.67746 10.2589C5.0529 10.8715 3.21837 10.4963 1.98107 9.25063L1.82296 9.08506C0.853919 8.01548 0.49967 6.55603 0.807319 5.18061L0.836099 5.0656L3.41945 7.6489C3.69282 7.92227 4.13603 7.92227 4.4094 7.6489L6.6494 5.4089L6.72328 5.32204C6.92025 5.04819 6.89532 4.66414 6.64866 4.41821L4.0581 1.8346L4.17134 1.80677Z"
+                    fill="black" />
+                  <path
+                    d="M7.25943 11.2594C7.53285 10.9863 7.97582 10.9865 8.24906 11.2597L11.9291 14.9397C12.2024 15.2131 12.2024 15.6563 11.9291 15.9297L6.23906 21.6197L5.24911 20.6297L10.4451 15.4347L7.75408 12.7437L1.12308 19.3647L4.80906 23.0497L3.81911 24.0397L-0.360893 19.8597C-0.634387 19.5862 -0.634241 19.1427 -0.360568 18.8694L7.25943 11.2594Z"
+                    fill="black" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.923 0.563031C20.6515 0.275676 20.1961 0.269977 19.9175 0.550451L16.9675 3.52045C16.7012 3.7886 16.6958 4.21974 16.9553 4.49447L18.6653 6.30447C18.9368 6.59183 19.3922 6.59752 19.6708 6.31705L22.6208 3.34705C22.8871 3.0789 22.8925 2.64776 22.633 2.37303L20.923 0.563031ZM18.4382 4.02575L20.4012 2.04875L21.1492 2.84075L19.1862 4.81775L18.4382 4.02575Z"
+                    fill="black" />
+                  <path d="M17.3694 4.7793L18.3593 5.76925L13.0793 11.0492L12.0894 10.0593L17.3694 4.7793Z"
+                    fill="black" />
+                </svg><span class="topic-text" key="lan_apis11">Utilities</span></button>
+            </div>
+          </div>
+
+          <div class="tab-side-doc sticky-top">
+            <h3 class="topic" key="lan_apis4">Topics</h3>
+            <span class="api_leftMenu">
+              <a href="#"></a>
+              <button key="lan_apis5" class="tablinks-side-schema" onclick="openSchema(event, 'Discovery_Schema')">
+                <span id="defaultOpenSchema" class="dotProduct"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                  height="25" viewBox="0 0 24 25" fill="none">
+                  <path
+                    d="M13.1299 11.3008L22.1099 19.6508C22.6099 20.1108 22.6399 20.8908 22.1699 21.3908L20.0699 23.6508"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path d="M18.62 21.2002L10.77 13.9102" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <circle cx="7" cy="8" r="7" stroke="black" stroke-width="1.4" stroke-linecap="square"
+                    stroke-linejoin="round" />
+                </svg>
+                Discovery</button>
+
+              <button key="lan_apis6" class="tablinks-side-schema" onclick="openSchema(event, 'Pricing_Schema')"><span
+                  class="dotProduct"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.98 9.72C2.04 4.6 6.58 0.75 12.02 0.75C18.25 0.75 23.3 5.8 23.3 12.03C23.3 18.26 18.25 23.31 12.02 23.31C5.79 23.31 0.75 18.25 0.75 12.03"
+                    fill="" />
+                  <path
+                    d="M0.98 9.72C2.04 4.6 6.58 0.75 12.02 0.75C18.25 0.75 23.3 5.8 23.3 12.03C23.3 18.26 18.25 23.31 12.02 23.31C5.79 23.31 0.75 18.25 0.75 12.03"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.1198 10.239V9.29898C15.1198 8.14898 14.1798 7.20898 13.0298 7.20898H11.1598C10.0098 7.20898 9.06982 8.14898 9.06982 9.29898C9.06982 9.86898 9.38982 10.399 9.90982 10.649L14.2898 12.839C14.7998 13.099 15.1298 13.619 15.1298 14.189C15.1298 15.339 14.1898 16.279 13.0398 16.279H11.1698C10.0198 16.279 9.07982 15.339 9.07982 14.189V13.249"
+                    fill="" />
+                  <path
+                    d="M15.1198 10.239V9.29898C15.1198 8.14898 14.1798 7.20898 13.0298 7.20898H11.1598C10.0098 7.20898 9.06982 8.14898 9.06982 9.29898V9.29898C9.06982 9.86898 9.38982 10.399 9.90982 10.649L14.2898 12.839C14.7998 13.099 15.1298 13.619 15.1298 14.189V14.189C15.1298 15.339 14.1898 16.279 13.0398 16.279H11.1698C10.0198 16.279 9.07982 15.339 9.07982 14.189V13.249"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 7.20992V4.66992V7.20992Z" fill="" />
+                  <path d="M12.0898 7.20992V4.66992" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 18.8108V16.3008V18.8108Z" fill="" />
+                  <path d="M12.0898 18.8108V16.3008" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>Pricing</button>
+
+              <button key="lan_apis7" class="tablinks-side-schema" onclick="openSchema(event, 'Sales_Schema')"><span
+                  class="dotProduct"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                  viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.70996 18.1305H20.66C20.66 18.1305 21.22 18.1905 21.45 17.6205L23.2 8.37055C23.37 7.84055 22.98 7.31055 22.43 7.31055H4.70996"
+                    fill="" />
+                  <path
+                    d="M9.70996 18.1305H20.66C20.66 18.1305 21.22 18.1905 21.45 17.6205L23.2 8.37055C23.37 7.84055 22.98 7.31055 22.43 7.31055H4.70996"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.75 8.34961L6.47 17.5396C6.47 17.5396 6.7 18.3396 6.7 18.7096" fill="" />
+                  <path d="M4.75 8.34961L6.47 17.5396C6.47 17.5396 6.7 18.3396 6.7 18.7096" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                  <circle cx="9.00023" cy="22.2307" r="1.51" fill="" stroke="black" stroke-width="1.4"
+                    stroke-linejoin="round" />
+                  <circle cx="17.8699" cy="22.2307" r="1.51" fill="" stroke="black" stroke-width="1.4"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.75 8.35L3.31 1.01L0 1" fill="" />
+                  <path d="M4.75 8.35L3.31 1.01L0 1" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77979 10.6309H22.9998H7.77979Z" fill="" />
+                  <path d="M7.77979 10.6309H22.9998" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.2002 14.2793H22.3202H9.2002Z" fill="" />
+                  <path d="M9.2002 14.2793H22.3202" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>Sales</button>
+
+              <button key="lan_apis8" class="tablinks-side-schema" onclick="openSchema(event, 'Payments_Schema')"><span
+                  class="dotProduct"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                  viewBox="0 0 24 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.9102 5.82039C23.1802 5.82039 22.3602 5.56039 21.8002 5.09039L19.4902 3.13039C18.9302 2.66039 18.2302 2.40039 17.5002 2.40039H13.3102L11.9502 8.92039H13.6702C14.8602 8.92039 15.9102 8.16039 16.3002 7.04039L16.5802 6.20039"
+                    fill="" />
+                  <path
+                    d="M23.9102 5.82039C23.1802 5.82039 22.3602 5.56039 21.8002 5.09039L19.4902 3.13039C18.9302 2.66039 18.2302 2.40039 17.5002 2.40039H13.3102L11.9502 8.92039H13.6702C14.8602 8.92039 15.9102 8.16039 16.3002 7.04039L16.5802 6.20039"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.46 17.0408H18.58C19.24 17.0408 19.88 16.8308 20.42 16.4308L21.79 15.4108C22.32 15.0208 23.3 14.8008 23.96 14.8008"
+                    fill="" />
+                  <path
+                    d="M14.46 17.0408H18.58C19.24 17.0408 19.88 16.8308 20.42 16.4308L21.79 15.4108C22.32 15.0208 23.3 14.8008 23.96 14.8008"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.55 6.06L7.49 1L0.75 7.73L12.17 19.15L18.91 12.41L14.97 8.47" fill="" />
+                  <path d="M12.55 6.06L7.49 1L0.75 7.73L12.17 19.15L18.91 12.41L14.97 8.47" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.22998 3.25L16.57 14.59L5.22998 3.25Z" fill="" />
+                  <path d="M5.22998 3.25L16.57 14.59" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>Payments</button>
+
+              <button key="lan_apis10" class="tablinks-side-schema" onclick="openSchema(event, 'Servcing_Schema')"><span
+                  class="dotProduct"></span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  viewBox="0 0 25 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.9199H23.95H0Z" fill="" />
+                  <path d="M0 21.9199H23.95" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.80992 17.2895H23.3299C23.3299 11.0295 18.2599 6.18945 11.9999 6.18945C5.73992 6.18945 0.669922 11.0295 0.669922 17.2895V18.0995"
+                    fill="" />
+                  <path
+                    d="M3.80992 17.2895H23.3299C23.3299 11.0295 18.2599 6.18945 11.9999 6.18945C5.73992 6.18945 0.669922 11.0295 0.669922 17.2895V18.0995"
+                    stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39014 1.5H15.6001H8.39014Z" fill="" />
+                  <path d="M8.39014 1.5H15.6001" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9702 1.67969V5.73969V1.67969Z" fill="" />
+                  <path d="M11.9702 1.67969V5.73969" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.3501 13.1205C5.3501 13.1205 6.4801 10.2305 10.1501 9.31055L5.3501 13.1205Z" fill="" />
+                  <path d="M5.3501 13.1205C5.3501 13.1205 6.4801 10.2305 10.1501 9.31055" stroke="black"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                </svg>Servicing</button>
+
+
+              <button key="lan_apis9" class="tablinks-side-schema" onclick="openSchema(event, 'Claims_Schema')"><span
+                class="dotProduct"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                viewBox="0 0 24 25" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.66996 7.92C10.58 7.92 12.13 6.37 12.13 4.46C12.13 2.55 10.58 1 8.66996 1C6.75996 1 5.20996 2.55 5.20996 4.46C5.20996 6.37 6.75996 7.92 8.66996 7.92Z"
+                  fill="" stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 2.19922C0 2.75922 0.72 7.80922 0.72 7.80922C0.89 9.12922 2.01 10.1192 3.34 10.1192H3.94H13.42L11.77 22.3192C11.71 22.9692 11.17 23.4692 10.52 23.4692H6.85C6.2 23.4692 5.66 22.9692 5.6 22.3192V22.3392L4.54 14.7092C4.54 14.7092 4.3 13.0792 4.29 12.8392"
+                  fill="" />
+                <path
+                  d="M0 2.19922C0 2.75922 0.72 7.80922 0.72 7.80922C0.89 9.12922 2.01 10.1192 3.34 10.1192H3.94H13.42L11.77 22.3192C11.71 22.9692 11.17 23.4692 10.52 23.4692H6.85C6.2 23.4692 5.66 22.9692 5.6 22.3192V22.3392L4.54 14.7092C4.54 14.7092 4.3 13.0792 4.29 12.8392"
+                  stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+              </svg>Claims</button>
+
+              <button key="lan_apis11" class="tablinks-side-schema"
+                onclick="openSchema(event, 'Utilities_Schema')"><span class="dotProduct"></span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.2394 1.98895C7.44674 0.196294 4.71918 -0.198485 2.4775 0.939779L2.38546 0.995538C2.04142 1.24145 1.98877 1.74914 2.30019 2.05964L5.1631 4.9146L3.9141 6.1636L1.0594 3.30895C0.72284 2.97239 0.155771 3.06261 -0.0597222 3.487C-1.19833 5.72937 -0.802986 8.4576 0.990994 10.2404L1.17505 10.4178C2.67263 11.799 4.76338 12.2715 6.69282 11.7264L6.7331 11.7126L18.8195 23.7989C19.0928 24.0723 19.536 24.0723 19.8094 23.7989L22.7994 20.8089L22.8732 20.7221C23.07 20.4486 23.0454 20.065 22.7994 19.819L10.7121 7.7316L10.7256 7.68947C11.2839 5.68089 10.7486 3.49816 9.2394 1.98895ZM4.17134 1.80677C5.61973 1.48282 7.16259 1.89204 8.24945 2.9789C9.4871 4.21655 9.86271 6.05342 9.25826 7.6801L9.22987 7.77758C9.1807 8.00738 9.25008 8.24953 9.41945 8.4189L21.3141 20.3136L19.3141 22.3136L7.4194 10.419C7.22498 10.2245 6.93474 10.1619 6.67746 10.2589C5.0529 10.8715 3.21837 10.4963 1.98107 9.25063L1.82296 9.08506C0.853919 8.01548 0.49967 6.55603 0.807319 5.18061L0.836099 5.0656L3.41945 7.6489C3.69282 7.92227 4.13603 7.92227 4.4094 7.6489L6.6494 5.4089L6.72328 5.32204C6.92025 5.04819 6.89532 4.66414 6.64866 4.41821L4.0581 1.8346L4.17134 1.80677Z"
+                    fill="black" />
+                  <path
+                    d="M7.25943 11.2594C7.53285 10.9863 7.97582 10.9865 8.24906 11.2597L11.9291 14.9397C12.2024 15.2131 12.2024 15.6563 11.9291 15.9297L6.23906 21.6197L5.24911 20.6297L10.4451 15.4347L7.75408 12.7437L1.12308 19.3647L4.80906 23.0497L3.81911 24.0397L-0.360893 19.8597C-0.634387 19.5862 -0.634241 19.1427 -0.360568 18.8694L7.25943 11.2594Z"
+                    fill="black" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.923 0.563031C20.6515 0.275676 20.1961 0.269977 19.9175 0.550451L16.9675 3.52045C16.7012 3.7886 16.6958 4.21974 16.9553 4.49447L18.6653 6.30447C18.9368 6.59183 19.3922 6.59752 19.6708 6.31705L22.6208 3.34705C22.8871 3.0789 22.8925 2.64776 22.633 2.37303L20.923 0.563031ZM18.4382 4.02575L20.4012 2.04875L21.1492 2.84075L19.1862 4.81775L18.4382 4.02575Z"
+                    fill="black" />
+                  <path d="M17.3694 4.7793L18.3593 5.76925L13.0793 11.0492L12.0894 10.0593L17.3694 4.7793Z"
+                    fill="black" />
+                </svg>Utilities</button>
+            </span>
+          </div>
+
+          <div id="Discovery_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Discovery</h3>
+              <div id="Discovery_swagger" class="col">
+              </div>
+            </div>
+          </div>
+          <div id="Pricing_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Offers and Pricing </h3>
+              <div id="Pricing_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <div id="Sales_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Sales </h3>
+              <div id="Sales_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <div id="Payments_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Payments </h3>
+              <div id="Payments_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <div id="Claims_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Claims </h3>
+              <div id="Claims_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <div id="Servcing_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Servicing</h3>
+              <div id="Servcing_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <div id="Utilities_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Utilities </h3>
+              <div id="Utilities_swagger" class="col">
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="Metadata_Schema" class="tabcontent-doc-side-schema">
+            <div class="int-api">
+              <h3 class="propge-h3">Metadata</h3>
+              <div id="Metadata_swagger" class="col">
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+  </section>
+
+  <!-- footer section -->
+  <footer id="footer_section" class="py-5 pp-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="pp-copyright-block footer_copyright">
+            <div class="pp-footer-statement pb-10" key="label">©
+              <script>document.write(new Date().getFullYear())</script> Chubb
+            </div>
+            <ul class="pp-list-unstyled">
+                <li>
+                    <a class="lightbox ft-txt" href="https://www.chubb.com/us-en/terms-of-use.html" target="_blank" key="foolink1">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/content/dam/chubb-sites/chubb-com/us-en/global/global/documents/pdf/licensinginformation.pdf" target="_blank" class="ft-txt" key="foolink2">Licensing Information</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/online-privacy-policy.html" target="_blank" class="ft-txt" key="foolink3">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/online-privacy-policy.html#CCPA-section" target="_blank" class="ft-txt" key="foolink4">CA Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/do-not-call-policy.html" target="_blank" class="ft-txt" key="foolink5">Do Not Call Policy</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/tax-information-reporting-withholding.html" target="_blank" class="ft-txt" key="foolink6">Tax Information Reporting</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/important-notices/ny-domestic-violence.html" target="_blank" class="ft-txt" key="foolink7">NY Domestic Violence Notice</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/agents-brokers/producer-compensation.html" target="_blank" class="ft-txt" key="foolink8">Producer Compensation Legal Disclosure</a>
+                </li>
+                <li>
+                    <a href="https://chubb.com/us-en/accessibility-statement.html" target="_blank" class="ft-txt" key="foolink9">Accessibility Statement</a>
+                </li>
+                <li>
+                    <a href="https://about.chubb.com/" target="_blank" class="ft-txt" key="foolink10">About Us</a>
+                </li>
+                <li>
+                    <!-- OneTrust Cookies Settings button start -->
+                    <a class="ot-sdk-show-settings foo_cookie_link" key="foolink11">Cookie Preferences</a>
+                    <!-- OneTrust Cookies Settings button end -->
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 footer_desc">
+            <p></p>
+            <div class="pp-footer-statement_link">
+                <span class="mb-4" key="desc1">Insurance offered through the Chubb Studio platform to customers of businesses and associations ("Digital Partners") by insurance agencies licensed in applicable jurisdictions. The Chubb Studio platform and its components are SOC2 Type 1 and ANAB - ISO/IEC 27001:2022 as of December 2024. Insurance underwritten and provided by licensed Chubb insurance companies or subsidiaries. Chubb is the marketing name used to refer to subsidiaries of Chubb Limited providing insurance and related services. For a list of these subsidiaries, please visit our website at </span>
+                <span><a target="_blank" href="https://www.chubb.com/">www.chubb.com</a>.</span>
+            </div>
+            <p class="pp-footer-statement mb-4" key="desc2">Product descriptions, case studies and other content available on this site are sample representation of actual products and service offerings from Chubb’s portfolio. The site doesn’t represent the entire portfolio of Chubb’s products. Actual product and service offering availability is subject to local market laws and regulations. All products and service offerings may not be available in all markets and jurisdictions. Coverages contain exclusions and limitations. This platform contains representative product summaries only.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+  <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script> -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.MultiLanguage.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">	</script>
+  <script src="js/ga_gtm.js"></script>
+  <script src="js/lang_modal.js"></script>
+  <script src="js/map_reg_modal.js"></script>
+
+
+  <!-- Swagger Scripts -->
+  <script src="../../unpkg.com/swagger-ui-dist%404.4.1/swagger-ui-bundle.js" crossorigin></script>
+  <script src="../../unpkg.com/swagger-ui-dist%404.4.1/swagger-ui-standalone-preset.js" crossorigin></script>
+  <script src="js/documentation.js"></script>
+  <script>
+
+    window.onload = () => {
+      try{
+      const baseUrl = getBaseUrl() ?? 'studio-sit.chubb.com';
+      window.ui = SwaggerUIBundle({
+        url: `/assets/connect/claim.yaml`,
+        dom_id: '#swagger-ui',
+      });
+    } catch(e){}
+    };
+
+  </script>
+  <!-- Swagger Scripts -->
+
+  <script type="text/javascript">
+    call_cookie();
+    function OptanonWrapper() { }
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    if ((window.location.href.indexOf("sit") != -1) || window.location.href.indexOf("uat") != -1) {
+      //SIT, UAT
+      (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl + '&gtm_auth=xEONwvej2ER3x4_ecx9I5A&gtm_preview=env-3&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-W9VSJB9');
+    } else {
+      //PROD
+      (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl + '&gtm_auth=Gezoy4GuRDxDJvtHMVWKuA&gtm_preview=env-1&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-W9VSJB9');
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+</body>
+
+
+<!-- Mirrored from https://studio.chubb.com/connect/documentation by HTTrack Website Copier/3.x [XR&CO], Thu, 05 Nov 2026 05:53:17 GMT -->
+</html>
